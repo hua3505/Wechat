@@ -1,0 +1,4 @@
+<!--pages/index.wxml-->
+<button>hello {{msg}}</button>
+<input type="text" placeholder="String" />
+<view class="view"></view>
