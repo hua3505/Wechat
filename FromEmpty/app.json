@@ -1,6 +1,7 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/test/test"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -17,7 +18,7 @@
       "iconPath": "iconPath",
       "selectedIconPath": "selectedIconPath"
     }, {
-      "pagePath": "pages/index",
+      "pagePath": "pages/test/test",
       "text": "2",
       "iconPath": "iconPath",
       "selectedIconPath": "selectedIconPath"

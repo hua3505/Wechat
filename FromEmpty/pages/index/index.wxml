@@ -1,4 +1,14 @@
 <!--pages/index.wxml-->
 <button>hello {{msg}}</button>
+<input type="text" id="name" placeholder="Your Name" bindinput="bindNameInput" bindblur="bindNameInputEnd"/>
+<view bindtap="viewTap">{{"Click" + "Me"}}</view>
+<view class="{{viewClass}}" bindtap="changeClass"></view>
+<view class="view" bindtap="changeColor" style="background-color:{{color}}"></view>
+<!--<input type="text" placeholder="String" />
+<view class="view"></view>
 <input type="text" placeholder="String" />
 <view class="view"></view>
+<input type="text" placeholder="String" />
+<view class="view"></view>
+<input type="text" placeholder="String" />
+<view class="view"></view>-->
