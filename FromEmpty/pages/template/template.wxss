@@ -1,0 +1,18 @@
+/* pages/template/template.wxss */
+.blueText {
+    color: #0000ff;
+}
+.romName {
+    width: 400rpx;
+    height: 400rpx;
+    padding-left: 20rpx;
+    float: left;
+}
+.romImage {
+    width: 240rpx;
+    height: 400rpx;
+    float: left;
+}
+.biubiubiu {
+    color: #0000ff
+}

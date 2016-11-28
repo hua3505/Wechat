@@ -1,2 +1,7 @@
 /* pages/index.wxss */
-@import "../../wxss/common.wxss"
+@import "../../wxss/common.wxss";
+.includeButton {
+   width: max-content;
+   float: left;
+   margin-top: 100rpx
+}

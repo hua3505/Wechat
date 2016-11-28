@@ -1,0 +1,20 @@
+<!--pages/template/template.wxml-->
+<template is="msgItem" data="{{...item}}"/>
+<template name="romItem">
+    <view>
+        <image src="{{image}}"/>
+    </view>
+    <view>
+        <text>{{romName}}</text>
+    </view>
+</template>
+<template name="romItem2">
+    <view style="margin: 20rpx; width: 750rpx;">
+        <image class="romImage" src="{{image}}"/>
+        <text class='blueText romName'>{{romName}}</text>
+    </view>
+</template>
+<template is="{{romItemTemplate}}" wx:for="{{roms}}" data="{{...item}}"  />
+<!--导入了buttons.xml中定义的模板-->
+<import src="../../templates/buttons.wxml"/>
+<template is="button" wx:if="{{romItemTemplate == 'romItem'}}" data="{{action: 'biubiubiu', class: 'biubiubiu', buttontap: 'biubiubiu'}}" />

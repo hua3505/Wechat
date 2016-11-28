@@ -1,9 +1,12 @@
 <!--pages/index.wxml-->
 <button>hello {{msg}}</button>
 <input type="text" id="name" placeholder="Your Name" bindinput="bindNameInput" bindblur="bindNameInputEnd"/>
-<view bindtap="viewTap">{{"Click" + "Me"}}</view>
+<view bindtap="viewTap">{{"Click" + " Me"}}</view>
 <view class="{{viewClass}}" bindtap="changeClass"></view>
 <view class="view" bindtap="changeColor" style="background-color:{{color}}"></view>
+<view style="visibility:hidden">11</view>
+<view style="display:none">11</view>
+<view wx:if="{{false}}">11</view>
 <!--<input type="text" placeholder="String" />
 <view class="view"></view>
 <input type="text" placeholder="String" />
@@ -12,3 +15,7 @@
 <view class="view"></view>
 <input type="text" placeholder="String" />
 <view class="view"></view>-->
+<import src="../../templates/buttons.wxml" />
+<template is="button" wx:if="{{include == false}}" data="{{action: 'include', class: 'includeButton', buttontap: 'include'}}" />
+<include wx:if="{{include}}" src="../test/test.wxml"/>
+<template is="view" data="{{content: 'haha'}}"/>

@@ -1,0 +1,8 @@
+<!--
+ action: 按钮文字
+ class：button的class属性
+ buttontap: bindtap属性绑定的事件
+-->
+<template name="button">
+    <button class="{{class}}" bindtap="{{buttontap}}">{{action}}</button>
+</template>

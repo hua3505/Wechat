@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/wxkey/wxkey",
+    "pages/template/template"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -14,14 +16,16 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "1",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "text": "主页"
     }, {
       "pagePath": "pages/test/test",
-      "text": "2",
-      "iconPath": "iconPath",
-      "selectedIconPath": "selectedIconPath"
+      "text": "乘法表"
+    }, {
+      "pagePath": "pages/wxkey/wxkey",
+      "text": "wx:key"
+    }, {
+      "pagePath": "pages/template/template",
+      "text": "模板"
     }]
   }, 
   "debug": true
