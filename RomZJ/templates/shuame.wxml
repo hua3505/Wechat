@@ -1,0 +1,21 @@
+<!--
+  bindtap: 安装按钮点击事件响应函数
+-->
+<template name="shuame">
+    <view class="shuame">
+        <image src="http://m.romzj.com/assets/3d4501c1/images/shuame.svg" />
+        <view class="right">
+            <view class="text">
+                <view class="title">
+                    <text>刷机精灵手机版</text>
+                </view>
+                <view class="description">
+                    <text>速度最快的刷机工具</text>
+                </view>
+            </view>
+            <view class="button">
+                <button type="primary" bindtap="{{bindtap}}">安装</button>
+            </view>
+        </view>
+    </view>
+</template>

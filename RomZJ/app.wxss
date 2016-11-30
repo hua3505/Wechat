@@ -1,0 +1,37 @@
+.shuame {
+    margin-top: 20rpx;
+}
+
+.shuame image {
+    width: 180rpx;
+    height: 180rpx;
+    margin-left: 20rpx;
+}
+.shuame .right {
+    float: right;
+    width: 540rpx;
+}
+.shuame .right .text {
+    float: left;
+}
+.shuame .title {
+    color: #222;
+    margin-top: 30rpx;
+}
+.shuame .description {
+    color: #959595;
+    margin-top: 40rpx;
+    font-size: 32rpx;
+}
+.shuame .button {
+    float: right;
+    width: 180rpx;
+    margin-right: 20rpx;
+    margin-top: 40rpx;
+}
+
+.body {
+    background-color: #ffffff;
+    width: 750rpx;
+    height: 1334rpx;
+}

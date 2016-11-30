@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<import src="../../templates/errorMsg.wxml" />
+<template is="errorMsg" data="{{errorMsg: errorMsg}}" />

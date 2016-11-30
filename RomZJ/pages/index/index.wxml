@@ -1,0 +1,37 @@
+<!--pages/index/index.wxml-->
+<view class="body">
+    <view class="text model">
+        <text>我的机型：{{model}}</text>
+    </view>
+
+    <import src="../../templates/errorMsg.wxml" />
+    <template is="errorMsg" data="{{errorMsg: errorMsg}}" />
+
+    <template name="rom-item-property">
+        <view>
+            <text>{{key}}：</text>
+            <em>{{value}}</em>
+        </view>
+    </template>
+
+    <template name="rom-item">
+        <image class="rom-item-image" src="{{image}}" bindtap="gotoDetail" data-id="{{id}}" />
+        <view class="rom-item-right">
+            <view>
+                <navigator url="../detail/detail?id={{id}}">{{title}}</navigator >
+            </view>
+            <view class="rom-item-detail">
+                <template is="rom-item-property" data="{{key: '安卓版本', value: android_version}}" />
+                <template is="rom-item-property" data="{{key: '大小', value: size}}" />
+                <template is="rom-item-property" data="{{key: '发布时间', value: publish_date}}" />
+            </view>
+        </view>
+    </template>
+
+    <view class="rom-list">
+        <template wx:for="{{romList}}" is="rom-item" data="{{...item}}" />
+    </view>
+
+    <import src="../../templates/shuame.wxml" />
+    <template is="shuame" data="{{bindtap: 'downloadShuame'}}" />
+</view>

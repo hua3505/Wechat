@@ -1,0 +1,5 @@
+<template name="errorMsg">
+    <view wx:if="{{errorMsg !== ''}}" class="text">
+        <text>{{errorMsg}}</text>
+    </view>
+</template>

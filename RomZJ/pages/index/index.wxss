@@ -1,0 +1,38 @@
+/* pages/index/index.wxss */
+.text {
+    margin-left: 20rpx;
+}
+
+.model {
+    padding-top: 20rpx;
+}
+
+.rom-item-image {
+    width: 240rpx;
+    height: 426rpx;
+}
+
+.rom-list {
+    margin-left: 20rpx;
+    margin-top: 10px;
+    width: 730rpx
+}
+
+.rom-item-right {
+    width: 470rpx;
+    float: right;
+    margin-right: 20rpx;
+}
+
+.rom-item-detail {
+    margin-top: 20rpx;
+    color: silver;
+}
+
+.rom-item-detail view {
+    padding-top: 10rpx;
+}
+
+.rom-item-detail em {
+    color: #959595;
+}
