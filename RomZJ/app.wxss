@@ -5,11 +5,10 @@
 .shuame image {
     width: 180rpx;
     height: 180rpx;
-    margin-left: 20rpx;
 }
 .shuame .right {
     float: right;
-    width: 540rpx;
+    width: 500rpx;
 }
 .shuame .right .text {
     float: left;
@@ -26,12 +25,13 @@
 .shuame .button {
     float: right;
     width: 180rpx;
-    margin-right: 20rpx;
     margin-top: 40rpx;
 }
 
 .body {
+    padding-left: 20rpx;
+    padding-right: 20rpx;
     background-color: #ffffff;
-    width: 750rpx;
+    width: 710rpx;
     height: 1334rpx;
 }

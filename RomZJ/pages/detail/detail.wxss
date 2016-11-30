@@ -1,4 +1,50 @@
 /* pages/detail/detail.wxss */
-.text {
-    margin-left: 20rpx;
+
+.image {
+    width: 240rpx;
+    height: 400rpx;
+}
+
+.rom-name {
+    float: right;
+    width: 450rpx;
+    font-size: 60rpx;
+}
+
+.subtitle {
+    margin-top: 20rpx;
+}
+
+.subtitle text {
+    color: #959595;
+    width: 355rpx;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.subtitle .left {
+    width: 355rpx;
+}
+
+.subtitle .right {
+    width: 355rpx;
+}
+
+.thumb-item {
+  display: inline-block;
+  width: 400rpx;
+  height: 800rpx;
+}
+.thumbs {
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 800rpx;
+    width: 100%;
+    margin-bottom: 20rpx;
 }

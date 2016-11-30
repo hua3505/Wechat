@@ -1,7 +1,4 @@
 /* pages/index/index.wxss */
-.text {
-    margin-left: 20rpx;
-}
 
 .model {
     padding-top: 20rpx;
@@ -9,19 +6,17 @@
 
 .rom-item-image {
     width: 240rpx;
-    height: 426rpx;
+    height: 400rpx;
 }
 
 .rom-list {
-    margin-left: 20rpx;
     margin-top: 10px;
-    width: 730rpx
+    width: 710rpx
 }
 
 .rom-item-right {
-    width: 470rpx;
+    width: 450rpx;
     float: right;
-    margin-right: 20rpx;
 }
 
 .rom-item-detail {

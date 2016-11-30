@@ -1,3 +1,50 @@
 <!--pages/detail/detail.wxml-->
-<import src="../../templates/errorMsg.wxml" />
-<template is="errorMsg" data="{{errorMsg: errorMsg}}" />
+<view class="body">
+    <import src="../../templates/errorMsg.wxml" />
+    <template is="errorMsg" data="{{errorMsg: errorMsg}}" />
+
+    <view class="title">
+        <image class="image" src="{{romInfo.image}}" />
+        <view class="rom-name">
+            <text>{{romInfo.title}}</text>
+        </view>
+    </view>
+
+    <view class="subtitle">
+        <view class="left">
+            <view>
+                <text>{{romInfo.publish_date}}发布</text>
+            </view>
+            <view>
+                <text>安卓版本：{{romInfo.android_version}}</text>
+            </view>
+            <view>
+                <text>大小：{{romInfo.size}}</text>
+            </view>
+        </view>
+        <view class="right">
+            <view>
+                <text>作者：{{romInfo.author}}</text>
+            </view>
+            <view>
+                <text>UI类型：{{romInfo.ui_type}}</text>
+            </view>
+            <view>
+                <text>适合机型：{{romInfo.phone}}</text>
+            </view>
+        </view>
+    </view>
+    
+    <view>
+        <scroll-view scroll-x="true" class="thumbs">
+            <image wx:for="{{romInfo.image_list}}" class="thumb-item" src="{{item}}" bindtap="previewThumbs" data-url="{{item}}" />
+        </scroll-view>
+    </view>
+
+    <view>
+        <text>{{romInfo.description}}</text>
+    </view>
+
+    <import src="../../templates/shuame.wxml" />
+    <template is="shuame" data="{{bindtap: 'downloadShuame'}}" />
+</view>
