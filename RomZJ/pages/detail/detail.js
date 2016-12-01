@@ -8,8 +8,6 @@ Page({
     // 页面初始化 options为页面跳转所带来的参数
     console.log("id: " + options.id)
     this.id = options.id
-    // for test
-    this.id = 59750
   },
   onReady: function () {
     // 页面渲染完成
@@ -18,6 +16,9 @@ Page({
       icon: 'loading',
       duration: 10000
     })
+    this.requestDetail()
+  },
+  onPullDownRefresh() {
     this.requestDetail()
   },
   requestDetail: function () {
@@ -43,6 +44,9 @@ Page({
         page.setErrorMsg("网络错误")
         console.log("fail")
       },
+      complete: function () {
+        wx.stopPullDownRefresh()
+      }
     })
   },
   setErrorMsg: function (errorMsg) {

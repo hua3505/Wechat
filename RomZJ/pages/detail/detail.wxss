@@ -1,5 +1,9 @@
 /* pages/detail/detail.wxss */
 
+.title {
+    padding-top: 20rpx;
+}
+
 .image {
     width: 240rpx;
     height: 400rpx;

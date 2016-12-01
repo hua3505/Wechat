@@ -18,7 +18,7 @@
         <image class="rom-item-image" src="{{image}}" bindtap="gotoDetail" data-id="{{id}}" />
         <view class="rom-item-right">
             <view>
-                <navigator url="../detail/detail?id={{id}}">{{title}}</navigator >
+                <navigator class="rom-name" url="../detail/detail?id={{id}}">{{title}}</navigator >
             </view>
             <view class="rom-item-detail">
                 <template is="rom-item-property" data="{{key: '安卓版本', value: android_version}}" />

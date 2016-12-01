@@ -33,5 +33,6 @@
     padding-right: 20rpx;
     background-color: #ffffff;
     width: 710rpx;
-    height: 1334rpx;
+    height: 100%;
+    min-height: 1334rpx;
 }

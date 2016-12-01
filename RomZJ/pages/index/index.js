@@ -46,8 +46,6 @@ Page({
     var model = this.data.model;
     model = model.replace(" ", "")
     model = model.toLowerCase()
-    // for test
-    model = "mi5"
     console.log(model)
     wx.request({
       url: 'https://romzj.applinzi.com/api/getRomList.php?model=' + model,

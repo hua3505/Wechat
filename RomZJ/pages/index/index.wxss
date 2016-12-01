@@ -4,6 +4,10 @@
     padding-top: 20rpx;
 }
 
+.rom-name {
+    font-size: 45rpx;
+}
+
 .rom-item-image {
     width: 240rpx;
     height: 400rpx;

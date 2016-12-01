@@ -34,8 +34,8 @@
             </view>
         </view>
     </view>
-    
-    <view>
+
+    <view style="margin-top: 200rpx;">
         <scroll-view scroll-x="true" class="thumbs">
             <image wx:for="{{romInfo.image_list}}" class="thumb-item" src="{{item}}" bindtap="previewThumbs" data-url="{{item}}" />
         </scroll-view>
